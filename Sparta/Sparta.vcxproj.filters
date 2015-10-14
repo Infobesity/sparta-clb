@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="gui">
+      <UniqueIdentifier>{e5bf6f1a-f90f-4180-b385-f76601929d0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\detail">
+      <UniqueIdentifier>{dcf1e235-0bfa-4999-ac2e-2f9a748d8044}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\types">
+      <UniqueIdentifier>{c1a8f8d5-4fe4-48ea-988c-6f73a20a398a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{56f90196-992b-44cc-87b4-75a10e102c32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{98e2f672-9cf2-4f11-980b-7657cb0f8341}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\image">
+      <UniqueIdentifier>{7dfaa262-68e6-4354-8875-86f93bf0b3bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\detail\widgets">
+      <UniqueIdentifier>{2a706c46-fc33-4dca-80a3-08d0d1af20e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="generic">
+      <UniqueIdentifier>{2b50bfaf-f707-4e94-aaee-1dc71ca75c6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="maplestory">
+      <UniqueIdentifier>{5f110b06-a2b9-421c-a185-7f884ae6f49c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="generic\output">
+      <UniqueIdentifier>{66116b24-b8bd-4541-b562-e2a3fde35ba8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="maplestory\network">
+      <UniqueIdentifier>{bb2255a0-56bf-471d-bfb8-55d31879d3a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="maplestory\network\crypto">
+      <UniqueIdentifier>{e782d370-d0f3-4e01-9e66-ae5dc5aba4a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="maplestory\nexon api">
+      <UniqueIdentifier>{58bdb35c-76be-4b89-a180-438eaaadfb72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="maplestory\network\crypto\rijndael">
+      <UniqueIdentifier>{706026dc-32e2-4cb1-a6f6-b5b608cffb1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="maplestory\crc32">
+      <UniqueIdentifier>{74155844-ba7b-46ea-b37e-96724ac6ce9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="maplestory\headers">
+      <UniqueIdentifier>{6d59f8f0-4a4b-4c61-ae88-c202d599f96f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="maplestory\network\packet">
+      <UniqueIdentifier>{8831ccb6-30ea-4713-9979-81fb8989f430}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="maplestory\security client">
+      <UniqueIdentifier>{83a2d4d5-b0a4-46d1-948d-410092e88ad6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="maplestory\stages">
+      <UniqueIdentifier>{8f6ca5f7-0b4b-4d79-bac2-f4dbfca01e59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="maplestory\stages\base">
+      <UniqueIdentifier>{ce90916e-19ea-485c-b1f0-cd0b9ee78583}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="maplestory\stages\login">
+      <UniqueIdentifier>{986f64b8-ffef-4cb5-8236-61303b5008f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="maplestory\structures">
+      <UniqueIdentifier>{26dcf776-edd2-4ef1-ba3a-3595e054feaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="maplestory\stages\game">
+      <UniqueIdentifier>{7523668d-9f35-4999-9904-6cde61c357a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="maplestory\stages\game\subclasses">
+      <UniqueIdentifier>{a7d8f982-2018-4161-bb86-c914b5053f77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="maplestory\stages\structures">
+      <UniqueIdentifier>{990c7440-d653-4617-97a9-35a0f5462925}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="widget.hpp">
+      <Filter>gui\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="basic_types.hpp">
+      <Filter>gui\types</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.hpp">
+      <Filter>resource</Filter>
+    </ClInclude>
+    <ClInclude Include="sparta_form.hpp">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="png_image.hpp">
+      <Filter>resource\image</Filter>
+    </ClInclude>
+    <ClInclude Include="checkbox.hpp">
+      <Filter>gui\detail\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="panel.hpp">
+      <Filter>gui\detail\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="tab_control.hpp">
+      <Filter>gui\detail\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="listbox.hpp">
+      <Filter>gui\detail\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="panel_seperator.hpp">
+      <Filter>gui\detail\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="listview.hpp">
+      <Filter>gui\detail\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="textbox.hpp">
+      <Filter>gui\detail\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="button.hpp">
+      <Filter>gui\detail\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="label.hpp">
+      <Filter>gui\detail\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="treeview.hpp">
+      <Filter>gui\detail\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="generic.hpp">
+      <Filter>generic</Filter>
+    </ClInclude>
+    <ClInclude Include="crc32.hpp">
+      <Filter>maplestory\crc32</Filter>
+    </ClInclude>
+    <ClInclude Include="rijndael.hpp">
+      <Filter>maplestory\network\crypto\rijndael</Filter>
+    </ClInclude>
+    <ClInclude Include="rijndael_tables.hpp">
+      <Filter>maplestory\network\crypto\rijndael</Filter>
+    </ClInclude>
+    <ClInclude Include="packet_crypto.hpp">
+      <Filter>maplestory\network\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="output.hpp">
+      <Filter>generic\output</Filter>
+    </ClInclude>
+    <ClInclude Include="config.hpp">
+      <Filter>maplestory\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="opcodes.hpp">
+      <Filter>maplestory\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="tcp_socket.hpp">
+      <Filter>maplestory\network</Filter>
+    </ClInclude>
+    <ClInclude Include="io_packet.hpp">
+      <Filter>maplestory\network\packet</Filter>
+    </ClInclude>
+    <ClInclude Include="account.hpp">
+      <Filter>maplestory\structures</Filter>
+    </ClInclude>
+    <ClInclude Include="session.hpp">
+      <Filter>maplestory\structures</Filter>
+    </ClInclude>
+    <ClInclude Include="stage_base.hpp">
+      <Filter>maplestory\stages\base</Filter>
+    </ClInclude>
+    <ClInclude Include="game_stage.hpp">
+      <Filter>maplestory\stages\game</Filter>
+    </ClInclude>
+    <ClInclude Include="login_stage.hpp">
+      <Filter>maplestory\stages\login</Filter>
+    </ClInclude>
+    <ClInclude Include="nexon_api\NMCOClientObject.h">
+      <Filter>maplestory\nexon api</Filter>
+    </ClInclude>
+    <ClInclude Include="nexon_api\NMCOHelpers.h">
+      <Filter>maplestory\nexon api</Filter>
+    </ClInclude>
+    <ClInclude Include="nexon_api\NMCONew.h">
+      <Filter>maplestory\nexon api</Filter>
+    </ClInclude>
+    <ClInclude Include="nexon_api\NMCRChatRoom.h">
+      <Filter>maplestory\nexon api</Filter>
+    </ClInclude>
+    <ClInclude Include="nexon_api\NMCSChatSession.h">
+      <Filter>maplestory\nexon api</Filter>
+    </ClInclude>
+    <ClInclude Include="nexon_api\NMDataObject.h">
+      <Filter>maplestory\nexon api</Filter>
+    </ClInclude>
+    <ClInclude Include="nexon_api\NMEventHandler.h">
+      <Filter>maplestory\nexon api</Filter>
+    </ClInclude>
+    <ClInclude Include="nexon_api\NMEventObject.h">
+      <Filter>maplestory\nexon api</Filter>
+    </ClInclude>
+    <ClInclude Include="nexon_api\NMFDSFileDownloadSession.h">
+      <Filter>maplestory\nexon api</Filter>
+    </ClInclude>
+    <ClInclude Include="nexon_api\NMFunctionObject.h">
+      <Filter>maplestory\nexon api</Filter>
+    </ClInclude>
+    <ClInclude Include="nexon_api\NMFUSFileUploadSession.h">
+      <Filter>maplestory\nexon api</Filter>
+    </ClInclude>
+    <ClInclude Include="nexon_api\NMGeneral.h">
+      <Filter>maplestory\nexon api</Filter>
+    </ClInclude>
+    <ClInclude Include="nexon_api\NMGSGeneralSession.h">
+      <Filter>maplestory\nexon api</Filter>
+    </ClInclude>
+    <ClInclude Include="nexon_api\NMManager.h">
+      <Filter>maplestory\nexon api</Filter>
+    </ClInclude>
+    <ClInclude Include="nexon_api\NMSerializable.h">
+      <Filter>maplestory\nexon api</Filter>
+    </ClInclude>
+    <ClInclude Include="nexon_api\NMWSWBSession.h">
+      <Filter>maplestory\nexon api</Filter>
+    </ClInclude>
+    <ClInclude Include="channel_info.hpp">
+      <Filter>maplestory\stages\structures</Filter>
+    </ClInclude>
+    <ClInclude Include="character_info.hpp">
+      <Filter>maplestory\stages\structures</Filter>
+    </ClInclude>
+    <ClInclude Include="world_info.hpp">
+      <Filter>maplestory\stages\structures</Filter>
+    </ClInclude>
+    <ClInclude Include="system_info.hpp">
+      <Filter>maplestory</Filter>
+    </ClInclude>
+    <ClInclude Include="maple_client.hpp">
+      <Filter>maplestory</Filter>
+    </ClInclude>
+    <ClInclude Include="character_data.hpp">
+      <Filter>maplestory\stages\structures</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="widget.cpp">
+      <Filter>gui\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="basic_types.cpp">
+      <Filter>gui\types</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="sparta_form.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="png_image.cpp">
+      <Filter>resource\image</Filter>
+    </ClCompile>
+    <ClCompile Include="crc32.cpp">
+      <Filter>maplestory\crc32</Filter>
+    </ClCompile>
+    <ClCompile Include="rijndael.cpp">
+      <Filter>maplestory\network\crypto\rijndael</Filter>
+    </ClCompile>
+    <ClCompile Include="packet_crypto.cpp">
+      <Filter>maplestory\network\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="generic.cpp">
+      <Filter>generic</Filter>
+    </ClCompile>
+    <ClCompile Include="output.cpp">
+      <Filter>generic\output</Filter>
+    </ClCompile>
+    <ClCompile Include="tcp_socket.cpp">
+      <Filter>maplestory\network</Filter>
+    </ClCompile>
+    <ClCompile Include="io_packet.cpp">
+      <Filter>maplestory\network\packet</Filter>
+    </ClCompile>
+    <ClCompile Include="stage_base.cpp">
+      <Filter>maplestory\stages\base</Filter>
+    </ClCompile>
+    <ClCompile Include="game_stage.cpp">
+      <Filter>maplestory\stages\game</Filter>
+    </ClCompile>
+    <ClCompile Include="login_stage.cpp">
+      <Filter>maplestory\stages\login</Filter>
+    </ClCompile>
+    <ClCompile Include="nexon_api\NMCOClientObject.cpp">
+      <Filter>maplestory\nexon api</Filter>
+    </ClCompile>
+    <ClCompile Include="nexon_api\NMCOHelpers.cpp">
+      <Filter>maplestory\nexon api</Filter>
+    </ClCompile>
+    <ClCompile Include="nexon_api\NMCRChatRoom.cpp">
+      <Filter>maplestory\nexon api</Filter>
+    </ClCompile>
+    <ClCompile Include="nexon_api\NMCSChatSession.cpp">
+      <Filter>maplestory\nexon api</Filter>
+    </ClCompile>
+    <ClCompile Include="nexon_api\NMDataObject.cpp">
+      <Filter>maplestory\nexon api</Filter>
+    </ClCompile>
+    <ClCompile Include="nexon_api\NMEventHandler.cpp">
+      <Filter>maplestory\nexon api</Filter>
+    </ClCompile>
+    <ClCompile Include="nexon_api\NMEventObject.cpp">
+      <Filter>maplestory\nexon api</Filter>
+    </ClCompile>
+    <ClCompile Include="nexon_api\NMFDSFileDownloadSession.cpp">
+      <Filter>maplestory\nexon api</Filter>
+    </ClCompile>
+    <ClCompile Include="nexon_api\NMFiles.cpp">
+      <Filter>maplestory\nexon api</Filter>
+    </ClCompile>
+    <ClCompile Include="nexon_api\NMFunctionObject.cpp">
+      <Filter>maplestory\nexon api</Filter>
+    </ClCompile>
+    <ClCompile Include="nexon_api\NMFUSFileUploadSession.cpp">
+      <Filter>maplestory\nexon api</Filter>
+    </ClCompile>
+    <ClCompile Include="nexon_api\NMGSGeneralSession.cpp">
+      <Filter>maplestory\nexon api</Filter>
+    </ClCompile>
+    <ClCompile Include="nexon_api\NMManager.cpp">
+      <Filter>maplestory\nexon api</Filter>
+    </ClCompile>
+    <ClCompile Include="nexon_api\NMSerializable.cpp">
+      <Filter>maplestory\nexon api</Filter>
+    </ClCompile>
+    <ClCompile Include="nexon_api\NMWSWBSession.cpp">
+      <Filter>maplestory\nexon api</Filter>
+    </ClCompile>
+    <ClCompile Include="system_info.cpp">
+      <Filter>maplestory</Filter>
+    </ClCompile>
+    <ClCompile Include="maple_client.cpp">
+      <Filter>maplestory</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

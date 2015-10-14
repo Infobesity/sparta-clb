@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6F576DF7-E273-481D-90D9-3093F600A21E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Sparta</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="basic_types.cpp" />
+    <ClCompile Include="crc32.cpp" />
+    <ClCompile Include="game_stage.cpp" />
+    <ClCompile Include="generic.cpp" />
+    <ClCompile Include="io_packet.cpp" />
+    <ClCompile Include="login_stage.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="maple_client.cpp" />
+    <ClCompile Include="nexon_api\NMCOClientObject.cpp" />
+    <ClCompile Include="nexon_api\NMCOHelpers.cpp" />
+    <ClCompile Include="nexon_api\NMCRChatRoom.cpp" />
+    <ClCompile Include="nexon_api\NMCSChatSession.cpp" />
+    <ClCompile Include="nexon_api\NMDataObject.cpp" />
+    <ClCompile Include="nexon_api\NMEventHandler.cpp" />
+    <ClCompile Include="nexon_api\NMEventObject.cpp" />
+    <ClCompile Include="nexon_api\NMFDSFileDownloadSession.cpp" />
+    <ClCompile Include="nexon_api\NMFiles.cpp" />
+    <ClCompile Include="nexon_api\NMFunctionObject.cpp" />
+    <ClCompile Include="nexon_api\NMFUSFileUploadSession.cpp" />
+    <ClCompile Include="nexon_api\NMGSGeneralSession.cpp" />
+    <ClCompile Include="nexon_api\NMManager.cpp" />
+    <ClCompile Include="nexon_api\NMSerializable.cpp" />
+    <ClCompile Include="nexon_api\NMWSWBSession.cpp" />
+    <ClCompile Include="output.cpp" />
+    <ClCompile Include="packet_crypto.cpp" />
+    <ClCompile Include="png_image.cpp" />
+    <ClCompile Include="rijndael.cpp" />
+    <ClCompile Include="sparta_form.cpp" />
+    <ClCompile Include="stage_base.cpp" />
+    <ClCompile Include="system_info.cpp" />
+    <ClCompile Include="tcp_socket.cpp" />
+    <ClCompile Include="widget.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="account.hpp" />
+    <ClInclude Include="basic_types.hpp" />
+    <ClInclude Include="button.hpp" />
+    <ClInclude Include="channel_info.hpp" />
+    <ClInclude Include="character_data.hpp" />
+    <ClInclude Include="character_info.hpp" />
+    <ClInclude Include="checkbox.hpp" />
+    <ClInclude Include="config.hpp" />
+    <ClInclude Include="crc32.hpp" />
+    <ClInclude Include="game_stage.hpp" />
+    <ClInclude Include="generic.hpp" />
+    <ClInclude Include="io_packet.hpp" />
+    <ClInclude Include="label.hpp" />
+    <ClInclude Include="listbox.hpp" />
+    <ClInclude Include="listview.hpp" />
+    <ClInclude Include="login_stage.hpp" />
+    <ClInclude Include="maple_client.hpp" />
+    <ClInclude Include="nexon_api\NMCOClientObject.h" />
+    <ClInclude Include="nexon_api\NMCOHelpers.h" />
+    <ClInclude Include="nexon_api\NMCONew.h" />
+    <ClInclude Include="nexon_api\NMCRChatRoom.h" />
+    <ClInclude Include="nexon_api\NMCSChatSession.h" />
+    <ClInclude Include="nexon_api\NMDataObject.h" />
+    <ClInclude Include="nexon_api\NMEventHandler.h" />
+    <ClInclude Include="nexon_api\NMEventObject.h" />
+    <ClInclude Include="nexon_api\NMFDSFileDownloadSession.h" />
+    <ClInclude Include="nexon_api\NMFunctionObject.h" />
+    <ClInclude Include="nexon_api\NMFUSFileUploadSession.h" />
+    <ClInclude Include="nexon_api\NMGeneral.h" />
+    <ClInclude Include="nexon_api\NMGSGeneralSession.h" />
+    <ClInclude Include="nexon_api\NMManager.h" />
+    <ClInclude Include="nexon_api\NMSerializable.h" />
+    <ClInclude Include="nexon_api\NMWSWBSession.h" />
+    <ClInclude Include="opcodes.hpp" />
+    <ClInclude Include="output.hpp" />
+    <ClInclude Include="packet_crypto.hpp" />
+    <ClInclude Include="panel.hpp" />
+    <ClInclude Include="panel_seperator.hpp" />
+    <ClInclude Include="png_image.hpp" />
+    <ClInclude Include="resource.hpp" />
+    <ClInclude Include="rijndael.hpp" />
+    <ClInclude Include="rijndael_tables.hpp" />
+    <ClInclude Include="session.hpp" />
+    <ClInclude Include="sparta_form.hpp" />
+    <ClInclude Include="stage_base.hpp" />
+    <ClInclude Include="system_info.hpp" />
+    <ClInclude Include="tab_control.hpp" />
+    <ClInclude Include="tcp_socket.hpp" />
+    <ClInclude Include="textbox.hpp" />
+    <ClInclude Include="treeview.hpp" />
+    <ClInclude Include="widget.hpp" />
+    <ClInclude Include="world_info.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
