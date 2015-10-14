@@ -3,7 +3,7 @@
 #pragma comment( linker, "/manifestdependency:\"type='win32' name='Microsoft.Windows.Common-Controls' \
 		version='6.0.0.0' processorArchitecture='*' publicKeyToken='6595b64144ccf1df' language='*'\"")
 
-#define PRINT_STATUS 1
+#define PRINT_STATUS 0
 
 #if (PRINT_STATUS == 1)
 #define PRINT_DEBUG_INFO
